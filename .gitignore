@@ -1,0 +1,4 @@
+# All hidden files ignore
+.*
+# Expert .gitignore
+!.gitignore
