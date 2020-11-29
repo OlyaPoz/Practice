@@ -4,37 +4,70 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="../start_css/assets/css/reset.css" />
     <link rel="stylesheet" href="../start_css/assets/css/style.css" />
-    <title>FD2020-2</title>
+    <title>Table tarif</title>
   </head>
   <body>
-    <section class="cards-wrapper"></section>
-    <h1>User List</h1>
-    <article class="card-container">
-      <header class="card-bg"></header>
-      <div class="card-content">
-        <div class="photo-wrapper">
-        <img
-          class="card-photo"
-          src="../start_css/assets/css/images/w.jpg"
-          alt="photo"
-        />
-      </div>
-        <h2 class="card-name">Name Surname</h2>
-        <p>New Jersey, USA</p>
-        <div class="btn-conteiner">
-          <button class="card-btn">Follow</button>
-          <button class="card-btn">Send message</button>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur,
-          quam.
-        </p>
-      </div>
-      <footer class="contacts-conteiner">
-        <img src="../start_css/assets/css/images/bee-flower.png" alt="contact" class="contact">
-        <img src="../start_css/assets/css/images/bee-flower.png" alt="contact" class="contact">
-        <img src="../start_css/assets/css/images/bee-flower.png" alt="contact" class="contact">
-      </footer>
-    </article>
+    <table>
+      <thead>
+        <td>Choose your plan</td>
+        <td><p id="type">starter</p ><span>$10</span> <p>per month</p> </td>
+        <td> <p id="type">econom</p> <span>$30</span> <p>per month</p></td>
+        <td><p id="type">standart</p><span>$59</span> <p>per month</p></td>
+        <td> <p id="type">profesional</p><span>$99</span> <p>per month</p></td>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Amount of space</td>
+          <td>20GB</td>
+          <td>40GB</td>
+          <td>110GB</td>
+          <td>Unlimeted</td>
+        </tr>
+        <tr>
+          <td>Bandwidth per month</td>
+          <td id="white-color">120GB</td>
+          <td>240GB</td>
+          <td id="white-color">610GB</td>
+          <td>1300GB</td>
+        </tr>
+        <tr>
+          <td>Email accounts</td>
+          <td>1</td>
+          <td>15</td>
+          <td>60</td>
+          <td>Unlimeted</td>
+        </tr>
+        <tr>
+          <td>MySQL databases</td>
+          <td id="white-color">1</td>
+          <td>15</td>
+          <td id="white-color">60</td>
+          <td >Unlimeted</td>
+        </tr>
+        <tr>
+          <td>25h support</td>
+          <td>No</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td>Support tickets per month</td>
+          <td id="white-color">2</td>
+          <td>6</td>
+          <td id="white-color">14</td>
+          <td>20</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td></td>
+          <td><button class="start-btn">START</button></td>
+          <td><button class="start-btn">START</button></td>
+          <td><button class="start-btn">START</button></td>
+          <td><button class="start-btn">START</button></td>
+        </tr>
+      </tfoot>
+    </table>
   </body>
 </html>
