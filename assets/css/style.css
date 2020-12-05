@@ -1,3 +1,4 @@
+
 table{
   width: 80%;
   text-align: center;
@@ -5,21 +6,34 @@ table{
   border-spacing: 0;
 }
 
+:root {
+  --color1: #dcdcdc;
+  --color2: #e8e8e8;
+  --color3: #f3f3f3;
+}
+
 thead{
   background-color: #7988ac;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  padding: 50px;
 }
 
-#type {
-  padding-bottom: 30px;
+h2{
+  margin-bottom: 30px;
 }
 
 span {
   font-size: 40px;
   text-align: center;
+}
+
+p{
+  margin-top: 10px;
+}
+
+td {
+  padding: 20px;
 }
 
 thead td:nth-child(1) {
@@ -29,44 +43,28 @@ thead td:nth-child(1) {
 
 thead td:nth-child(2) {
   background-color: #4e628f;
-  padding: 20px;
-  width: 18%;
 }
 
 thead td:nth-child(3) {
-  width: 18%;
   background-color: #2a3f73;
 }
 
 thead td:nth-child(4) {
-  width: 18%;
   background-color: #0e2454;
 }
 
 thead td:nth-child(5) {
-  width: 18%;
   background-color: #010d36;
   border-top-right-radius: 15px;
 }
 
-tbody {
-  background: #dcdcdc;
+tbody > tr:nth-child(odd) > td:nth-child(odd) {
+  background-color: var(--color1);
 }
 
-tbody tr:nth-child(even) {
-  background: #e8e8e8;
-  padding: 20px;
-
-}
-
-tbody td:nth-child(even) {
-  background: #e8e8e8;
-  padding: 20px;
-
-}
-
-#white-color {
-  background: #f3f3f3;
+tbody > tr:nth-child(even) > td:nth-child(odd), 
+tbody > tr:nth-child(odd) > td:nth-child(even) {
+  background-color: var(--color2);
 }
 
 tfoot {
@@ -79,7 +77,6 @@ tfoot td:nth-child(even) {
  
 }
 
-
 tfoot td:first-child {
   border-bottom-left-radius: 15px;
 }
@@ -88,7 +85,7 @@ tfoot td:last-child {
   border-bottom-right-radius: 15px;
 }
 
-.start-btn {
+button {
   background-color: #dcdcdc;
   color: gray;
   padding: 10px 30px;
